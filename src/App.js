@@ -3,21 +3,23 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    // Create and configure the chatbot script element
+    // Create a script element dynamically for the chatbot
     const script = document.createElement('script');
     script.src = 'https://www.chatbase.co/embed.min.js';
     script.defer = true;
     script.setAttribute('chatbotId', 'JYT_XbQwOhNUCc_4Xbm9K');
     script.setAttribute('domain', 'www.chatbase.co');
 
-    // Append script to the body and set up configuration
+    // Append the script to the body
     document.body.appendChild(script);
+
+    // Add chatbot configuration
     window.embeddedChatbotConfig = {
       chatbotId: 'JYT_XbQwOhNUCc_4Xbm9K',
       domain: 'www.chatbase.co',
     };
 
-    // Clean up the script when component unmounts
+    // Cleanup the script when the component unmounts
     return () => {
       document.body.removeChild(script);
     };
@@ -93,37 +95,38 @@ function App() {
         </div>
       </section>
 
-      <section className="community-reviews" id="community">
-        <div className="container flex">
-          <div className="community">
+      <section className="community-reviews" id='community'>
+    <div className="container flex">
+        <div className="community">
             <h1>Join Our Community</h1>
             <p>Engage with other parents and caregivers to share experiences and advice.</p>
             <button className="btn btn-primary">Join Now</button>
-          </div>
-          <div className="reviews">
+        </div>
+        <div className="reviews">
             <h1 className="section-heading"><span>What</span> Parents Say</h1>
             <p>Hear from parents who have benefited from our resources and community.</p>
             <div className="slider">
-              <div className="slide">
-                <img src="images/mother of all (meriam ).jpg" alt="Sarah M." />
-                <p>"NourishKids has been a lifesaver. The meal plans and nutritional guides have helped me ensure my child is eating well."</p>
-                <span>- Sarah M., Proud Parent</span>
-              </div>
-              <div className="slide">
-                <img src="images/mother of all (meriam ).jpg" alt="John D." />
-                <p>"The community forum is fantastic! I've connected with so many parents and gained valuable insights."</p>
-                <span>- John D., Father of Two</span>
-              </div>
-              <div className="slide">
-                <img src="images/mother of all (meriam ).jpg" alt="Merry." />
-                <p>"Blessed be What you do!"</p>
-                <span>- Merry, Mother of All</span>
-              </div>
+                <div className="slide">
+                    <img src="images/mother of all (meriam ).jpg" alt="Sarah M." />
+                    <p>"NourishKids has been a lifesaver. The meal plans and nutritional guides have helped me ensure my child is eating well."</p>
+                    <span>- Sarah M., Proud Parent</span>
+                </div>
+                <div className="slide">
+                    <img src="images/mother of all (meriam ).jpg" alt="John D." />
+                    <p>"The community forum is fantastic! I've connected with so many parents and gained valuable insights."</p>
+                    <span>- John D., Father of Two</span>
+                </div>
+                <div className="slide">
+                    <img src="images/mother of all (meriam ).jpg" alt="Merry." />
+                    <p>"Blessed be What you do!"</p>
+                    <span>- Merry, Mother of All</span>
+                </div>
             </div>
             <div className="slider-dots"></div>
-          </div>
         </div>
-      </section>
+    </div>
+</section>
+
     </div>
   );
 }
