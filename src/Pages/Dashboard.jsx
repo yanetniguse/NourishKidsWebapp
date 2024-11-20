@@ -49,10 +49,8 @@ export const Dashboard = () => {
     }
   };
 
-  useEffect(() => {
-    getMealPlans();
-    getCreatedMealPlans();
-  }, []);
+  getMealPlans();
+  getCreatedMealPlans();
 
   return (
     <div className="main-app-container">

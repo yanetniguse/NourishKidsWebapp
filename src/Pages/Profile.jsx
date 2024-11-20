@@ -35,9 +35,7 @@ export const Profile = () => {
     }
   };
 
-  useEffect(() => {
-    getMealPlans();
-  }, []);
+  getMealPlans();
 
   const goToProfileEditor = (e) => {
     e.preventDefault();

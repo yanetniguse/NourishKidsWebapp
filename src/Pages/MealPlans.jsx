@@ -29,9 +29,7 @@ export const MealPlans = () => {
     }
   };
 
-  useEffect(() => {
-    getMealPlans();
-  }, []);
+  getMealPlans();
 
   return (
     <div className="main-app-container">
