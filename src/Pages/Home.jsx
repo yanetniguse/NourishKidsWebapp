@@ -22,15 +22,10 @@ export const Home = () => {
               backgroundImage: `url(${image3})`,
             }}
           >
-            <img
-              src="./src/assets/mountain.jpg"
-              alt=""
-              className="section-image"
-              width="300px"
-            />
+            <img src="" alt="" className="section-image" width="300px" />
           </div>
           <div className="section-text-container">
-            <h2 className="section-heading">Main heading</h2>
+            <h2 className="section-heading">NourishKids</h2>
             <section className="main-description">
               Promoting healthy nutrition and empowering communities to thrive.
               Join us in making a difference.
