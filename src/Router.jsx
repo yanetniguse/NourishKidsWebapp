@@ -31,17 +31,7 @@ export const Router = () => {
   const context = useOutletContext();
 
   const profileColRef = collection(db, "profiles");
-  // const isAccountProfile = query(
-  //     profileColRef,
-  //     where("userId", "==", auth?.currentUser?.uid)
-  // );
-
   const mealPlanColRef = collection(db, "mealPlans");
-  // const isPublicOrProfileMealPlan = query(
-  //     mealPlanColRef,
-  //     where("visibility", "==", "public"),
-  //     where("profileId", "==", context.activeProfile.id)
-  // );
 
   const getProfiles = async () => {
     try {

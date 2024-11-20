@@ -6,74 +6,68 @@ import aboutUs from "../assets/images/about-us.jpg";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
-    return (
-        <>
-            <section
-                style={{
-                    backgroundImage: `url(${image1})`,
-                    color: "white",
-                }}
-                className="page-section-background main-background"
-            >
-                <div className="page-section">
-                    <div
-                        className="section-image-container"
-                        style={{
-                            backgroundImage: `url(${image3})`,
-                        }}
-                    >
-                        <img
-                            src="./src/assets/mountain.jpg"
-                            alt=""
-                            className="section-image"
-                            width="300px"
-                        />
-                    </div>
-                    <div className="section-text-container">
-                        <h2 className="section-heading">Main heading</h2>
-                        <section className="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Tempora velit ipsam minus sequi eaque nihil,
-                            aliquid vitae voluptatibus pariatur delectus, fugit
-                            debitis amet fugiat aspernatur reiciendis quis ipsum
-                            suscipit hic provident sint laudantium neque eum
-                            beatae ducimus. Quidem perspiciatis blanditiis
-                            praesentium molestias voluptatibus veniam
-                            repellendus.
-                        </section>
-                    </div>
-                </div>
+  return (
+    <>
+      <section
+        style={{
+          backgroundImage: `url(${image1})`,
+          color: "white",
+        }}
+        className="page-section-background main-background"
+      >
+        <div className="page-section">
+          <div
+            className="section-image-container"
+            style={{
+              backgroundImage: `url(${image3})`,
+            }}
+          >
+            <img
+              src="./src/assets/mountain.jpg"
+              alt=""
+              className="section-image"
+              width="300px"
+            />
+          </div>
+          <div className="section-text-container">
+            <h2 className="section-heading">Main heading</h2>
+            <section className="main-description">
+              Promoting healthy nutrition and empowering communities to thrive.
+              Join us in making a difference.
             </section>
+          </div>
+        </div>
+      </section>
 
-            <section className="page-section">
-                <div className="section-text-container">
-                    <h2 className="section-heading">About us</h2>
-                    <div className="description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Animi fuga reprehenderit itaque iusto sint
-                        laboriosam magnam rerum. Provident voluptatum dolore
-                        nemo, fugiat, impedit vel consequatur dolorum nihil
-                        veritatis sint id quidem porro labore vitae voluptates
-                        ratione officia reiciendis soluta quo suscipit tempore a
-                        expedita incidunt.
-                    </div>
-                    <br />
-                    <Link to="/about-us">Read more</Link>
-                </div>
-                <div
-                    className="section-image-container"
-                    style={{
-                        backgroundImage: `url(${aboutUs})`,
-                    }}
-                >
-                    <img
-                        src="./images/mountain.jpg"
-                        alt=""
-                        className="section-image"
-                        width="300px"
-                    />
-                </div>
-            </section>
-        </>
-    );
+      <section className="page-section">
+        <div className="section-text-container">
+          <h2 className="section-heading">About us</h2>
+          <div className="description">
+            Our mission is to make healthy eating fun and accessible for kids.
+            We provide expert tips, easy meal plans, and kid-friendly recipes to
+            help parents and caregivers nourish their children with the right
+            foods. With the support of nutritionists and pediatric experts, we
+            aim to inspire lifelong healthy habits and ensure kids grow strong
+            and healthy. Join us in creating a healthier future, one meal at a
+            time!
+          </div>
+          <br />
+          <Link to="/about-us">Read more</Link>
+        </div>
+        <div
+          className="section-image-container"
+          style={{
+            backgroundImage: `url(${aboutUs})`,
+          }}
+        >
+          <img
+            src="./images/mountain.jpg"
+            alt=""
+            className="section-image"
+            width="300px"
+          />
+        </div>
+      </section>
+    </>
+  );
 };

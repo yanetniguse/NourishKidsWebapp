@@ -8,7 +8,7 @@
   --debug-image-color: hsl(0, 0%, 90%);
 
   --page-margin: 0 auto;
-  --page-width: 70%;
+  --page-width: 60%;
   --form-width: 45%;
 }
 
@@ -143,6 +143,10 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.main-description {
+  font-size: 1.5em;
 }
 
 /*/ /////////////// PAGE /////////////////////*/
