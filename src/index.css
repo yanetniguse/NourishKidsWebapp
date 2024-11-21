@@ -28,7 +28,7 @@ body {
   flex-direction: column;
 }
 
-/*//////////////// NAVBARS /////////////////////*/
+/*//////// NAVBAR ///////////*/
 header {
   background-color: black;
 }
@@ -61,14 +61,35 @@ header {
   height: 100%;
   text-decoration: none;
 }
-
 .nav-link:hover {
   background-color: white;
   color: black;
 }
-/*/ /////////////// NAVBAR /////////////////////*/
 
-/*//////////////// PAGE /////////////////////*/
+.ld-link {
+  color: hsl(120, 100%, 77%);
+  padding: 0.5em 0.5em;
+  height: 100%;
+  text-decoration: none;
+}
+.ld-link:hover {
+  background-color: hsl(120, 100%, 77%);
+  color: black;
+}
+
+.sl-link {
+  color: hsl(29, 100%, 70%);
+  padding: 0.5em 0.5em;
+  height: 100%;
+  text-decoration: none;
+}
+.sl-link:hover {
+  background-color: hsl(29, 100%, 70%);
+  color: black;
+}
+/*/ //////// NAVBAR ///////////*/
+
+/*//////// PAGE ///////////*/
 
 .page-section {
   margin: var(--page-margin);
@@ -149,9 +170,9 @@ header {
   font-size: 1.5em;
 }
 
-/*/ /////////////// PAGE /////////////////////*/
+/*/ //////// PAGE ///////////*/
 
-/*//////////////// FOOTER /////////////////////*/
+/*//////// FOOTER ///////////*/
 footer {
   margin-top: auto;
 }
@@ -226,9 +247,9 @@ footer {
   margin: var(--page-margin);
   width: var(--page-width);
 }
-/*/ /////////////// FOOTER /////////////////////*/
+/*/ //////// FOOTER ///////////*/
 
-/*//////////////// FORM /////////////////////*/
+/*//////// FORM ///////////*/
 
 .form-heading {
   font-size: 2.5em;
@@ -312,9 +333,9 @@ textarea {
 .icon-text {
   padding: 0.2em;
 }
-/*/ /////////////// FORM /////////////////////*/
+/*/ //////// FORM ///////////*/
 
-/*/ /////////////// SIDEMENU /////////////////////*/
+/*/ //////// SIDEMENU ///////////*/
 
 .sidemenu {
   height: 100%;
@@ -344,9 +365,9 @@ textarea {
 .sidemenu-link-icon {
   height: 1.2em;
 }
-/*/ /////////////// SIDEMENU /////////////////////*/
+/*/ //////// SIDEMENU ///////////*/
 
-/*/ /////////////// DASHBOARD /////////////////////*/
+/*/ //////// DASHBOARD ///////////*/
 
 .main-app-container {
   margin: var(--page-margin);
@@ -409,10 +430,12 @@ textarea {
   border-radius: 5px;
   font-size: 1.2em;
 }
-/*/ /////////////// DASHBOARD /////////////////////*/
+/*/ //////// DASHBOARD ///////////*/
 
-/*/ /////////////// MEALCARD /////////////////////*/
+/*/ //////// MEALCARD ///////////*/
 .meal-card-container {
+  background-color: hsl(0, 0%, 90%);
+
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 5px;
   margin: 10px;
@@ -449,9 +472,9 @@ textarea {
   text-overflow: ellipsis;
 }
 
-/*/ /////////////// MEALCARD /////////////////////*/
+/*/ //////// MEALCARD ///////////*/
 
-/*/ /////////////// PROFILECARD /////////////////////*/
+/*/ //////// PROFILECARD ///////////*/
 .profile-card-container {
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 5px;
@@ -493,9 +516,9 @@ textarea {
   text-overflow: ellipsis;
 }
 
-/*/ /////////////// PROFILECARD /////////////////////*/
+/*/ //////// PROFILECARD ///////////*/
 
-/*/ /////////////// NO PROFILE /////////////////////*/
+/*/ //////// NO PROFILE ///////////*/
 .no-profile-section {
   display: flex;
   flex-direction: column;
@@ -512,4 +535,4 @@ textarea {
   height: 100%;
 }
 
-/*/ /////////////// NO PROFILE /////////////////////*/
+/*/ //////// NO PROFILE ///////////*/

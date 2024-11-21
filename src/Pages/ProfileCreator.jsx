@@ -35,7 +35,7 @@ export const ProfileCreator = () => {
 
   return (
     <div className="main-app-container">
-      <SideMenu />
+      {context.activeProfile.id ? <SideMenu /> : <div></div>}
 
       <div className="profile-container">
         <h1>Profile Creator</h1>

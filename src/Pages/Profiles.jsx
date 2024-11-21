@@ -42,7 +42,7 @@ export const Profiles = () => {
 
   return (
     <div className="main-app-container">
-      <SideMenu />
+      {context.activeProfile.id ? <SideMenu /> : <div></div>}
       <div className="profiles-container">
         {profiles.length !== 0 ? (
           <>

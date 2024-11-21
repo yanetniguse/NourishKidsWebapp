@@ -12,7 +12,7 @@ export const MealPlans = () => {
   const mealPlanColRef = collection(db, "mealPlans");
   const profileMealPlan = query(
     mealPlanColRef,
-    where("profileId", "==", context.activeProfile.id)
+    where("profileId", "==", String(context.activeProfile.id))
   );
 
   const getMealPlans = async () => {
@@ -43,6 +43,7 @@ export const MealPlans = () => {
             <Link to={`/meal-plan/${mealPlan.id}`}>
               <MealPlanCard
                 key={mealPlan.id}
+                image={mealPlan.imageUrl}
                 name={mealPlan.name}
                 description={mealPlan.description}
               />

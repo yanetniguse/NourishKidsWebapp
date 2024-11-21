@@ -1,5 +1,6 @@
 import { useNavigate, useOutletContext } from "react-router-dom";
 import { SideMenu } from "../Components/SideMenu";
+import defaultMealPlanImage from "../assets/images/meal-card-image-default.jpg";
 
 export const MealPlan = () => {
   const context = useOutletContext();

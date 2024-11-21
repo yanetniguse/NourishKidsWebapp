@@ -90,6 +90,7 @@ export const Dashboard = () => {
             >
               <MealPlanCard
                 key={mealPlan.id}
+                image={mealPlan.imageUrl}
                 name={mealPlan.name}
                 description={mealPlan.description}
               />

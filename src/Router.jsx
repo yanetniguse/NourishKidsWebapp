@@ -64,7 +64,7 @@ export const Router = () => {
   useEffect(() => {
     getProfiles();
     getMealPlans();
-  }, []);
+  }, [profiles.length, mealPlans.length]);
 
   return (
     <>
