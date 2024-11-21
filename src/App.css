@@ -1,42 +1,61 @@
-#root {
-  max-width: 1280px;
+#container {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.brand-logo {
+  height: 5em;
+  margin: 1.5em;
+  will-change: transform, filter;
+  transition: transform 300ms, filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.brand-logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 2em #3498dbaa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.brand-logo.special:hover {
+  filter: drop-shadow(0 0 2em #e74c3caa);
 }
 
-@keyframes logo-spin {
-  from {
+@keyframes spin-effect {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .brand-logo.animated {
+    animation: spin-effect infinite 15s linear;
   }
 }
 
-.card {
-  padding: 2em;
+.card-container {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 1rem 0;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 200ms, box-shadow 200ms;
+}
+.card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
-.read-the-docs {
-  color: #888;
+.docs-link {
+  color: #555;
+  text-decoration: none;
+  transition: color 200ms;
+}
+.docs-link:hover {
+  color: #007acc;
 }
