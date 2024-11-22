@@ -14,7 +14,11 @@ export const MealPlan = () => {
     <div className="main-app-container">
       <SideMenu />
       <div className="meal-plan-container">
-        <img src={mealPlan.imageUrl} alt="" />
+        <img
+          src={mealPlan.imageUrl || defaultMealPlanImage}
+          alt=""
+          height="300px"
+        />
         <h2>{mealPlan.name}</h2>
 
         <div className="meal-text">

@@ -22,6 +22,7 @@ export const ProfileEditor = () => {
     try {
       e.preventDefault();
       const updatedProfile = {
+        id: context.activeProfile.id,
         name: name,
         birthDate: birthDate,
         weight: Number(weight),

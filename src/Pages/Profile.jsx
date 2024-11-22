@@ -11,7 +11,31 @@ export const Profile = () => {
   const context = useOutletContext();
   const navigate = useNavigate();
   const profile = context.activeProfile;
-  let age = Date.now() - Date.parse(profile.birthDate);
+  let age = calculateAge(new Date(context.activeProfile.birthDate));
+  let bmi = calculateBmi(
+    context.activeProfile.weight,
+    context.activeProfile.height
+  );
+
+  function calculateBmi(weight, height) {
+    return Math.round((weight / (height / 100) ** 2) * 100) / 100;
+  }
+
+  function calculateAge(birthDate) {
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+
+    // Adjust if the birthday hasn't occurred yet this year
+    const monthDifference = today.getMonth() - birthDate.getMonth();
+    if (
+      monthDifference < 0 ||
+      (monthDifference === 0 && today.getDate() < birthDate.getDate())
+    ) {
+      age--;
+    }
+
+    return age;
+  }
 
   const [mealPlans, setMealPlans] = useState([]);
 
@@ -53,8 +77,11 @@ export const Profile = () => {
             <p className="profile-name">{profile.name}</p>
             <p>Birth Date: {profile.birthDate}</p>
             <p>Age: {age}</p>
-            <p>Weight: {profile.weight}</p>
-            <p>Height: {profile.height}</p>
+            <p>Weight in kg: {profile.weight}</p>
+            <p>Height in cm: {profile.height}</p>
+            <p>
+              BMI: {bmi} kg/m<sup>2</sup>
+            </p>
             <button
               className="submit-button"
               onClick={(e) => goToProfileEditor(e)}

@@ -33,7 +33,7 @@ export const MealPlanEditor = () => {
         visible: updatedvisible,
       };
       await updateDoc(mealPlanDocRef, {
-        ...mealPlan,
+        id: mealPlan.id,
         ...updatedMealPlan,
       });
       navigate("/meal-plans");

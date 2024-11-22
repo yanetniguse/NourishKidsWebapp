@@ -49,8 +49,10 @@ export const Dashboard = () => {
     }
   };
 
-  getMealPlans();
-  getCreatedMealPlans();
+  useEffect(() => {
+    getMealPlans();
+    getCreatedMealPlans();
+  }, []);
 
   return (
     <div className="main-app-container">
@@ -59,7 +61,6 @@ export const Dashboard = () => {
       <div className="dashboard-container">
         <div className="dashboard-heading">
           <h2 className="dashboard-section-title">Featured Meal Plans</h2>
-          <div className="show-more"> show more</div>
         </div>
         <div className="card-section">
           {mealPlans.map((mealPlan) => (
@@ -79,7 +80,6 @@ export const Dashboard = () => {
 
         <div className="dashboard-heading">
           <h2 className="dashboard-section-title">Created Meal Plans</h2>
-          <div className="show-more"> show more</div>
         </div>
         <div className="card-section">
           {createdMealPlans.map((mealPlan) => (

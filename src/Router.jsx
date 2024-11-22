@@ -15,11 +15,9 @@ import { MealPlanner } from "./Pages/MealPlanner";
 import { Signup } from "./Pages/Signup";
 import { ProfileCreator } from "./Pages/ProfileCreator";
 import { Profiles } from "./Pages/Profiles";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, onSnapshot } from "firebase/firestore";
 import { db } from "./config/firebase.config";
 import { Profile } from "./Pages/Profile";
-import { query, where } from "firebase/firestore";
-import { auth } from "./config/firebase.config";
 import { ProfileEditor } from "./Pages/ProfileEditor";
 import { MealPlan } from "./Pages/MealPlan";
 import { MealPlans } from "./Pages/MealPlans";
@@ -61,10 +59,28 @@ export const Router = () => {
     }
   };
 
+  // onSnapshot(profileColRef, (snapshot) => {
+  //   let updatedProfiles = [];
+  //   snapshot.docs.forEach((doc) => {
+  //     updatedProfiles.push({ ...doc.data(), id: doc.id });
+  //   });
+  //   setProfiles(updateProfiles);
+  // });
+
+  // onSnapshot(mealPlanColRef, (snapshot) => {
+  //   let updatedMealPlans = [];
+  //   snapshot.docs.forEach((doc) => {
+  //     updatedMealPlans.push({ ...doc.data(), id: doc.id });
+  //   });
+  //   setMealPlans(updatedMealPlans);
+  // });
+
   useEffect(() => {
-    getProfiles();
-    getMealPlans();
-  }, [profiles.length, mealPlans.length]);
+    setTimeout(() => {
+      getProfiles();
+      getMealPlans();
+    }, 1000);
+  }, [JSON.stringify(profiles), JSON.stringify(length)]);
 
   return (
     <>

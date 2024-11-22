@@ -40,7 +40,10 @@ export const MealPlans = () => {
 
         <div className="card-section">
           {mealPlans.map((mealPlan) => (
-            <Link to={`/meal-plan/${mealPlan.id}`}>
+            <Link
+              onClick={() => context.setSelectedMealPlan(mealPlan)}
+              to={`/meal-plan/${mealPlan.id}`}
+            >
               <MealPlanCard
                 key={mealPlan.id}
                 image={mealPlan.imageUrl}

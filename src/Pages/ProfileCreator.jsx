@@ -25,8 +25,8 @@ export const ProfileCreator = () => {
         height: Number(height),
         userId: auth?.currentUser?.uid,
       };
-      await addDoc(profileColRef, profile);
-      context.setActiveProfile(profile);
+      const docRef = await addDoc(profileColRef, profile);
+      context.setActiveProfile({ ...profile, id: docRef.id });
       navigate("/dashboard");
     } catch (err) {
       console.error(err);

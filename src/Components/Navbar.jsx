@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../assets/images/logo.jpg";
+import logo from "../assets/images/logo.png";
 import { auth } from "../config/firebase.config";
 import { signOut } from "firebase/auth";
 
