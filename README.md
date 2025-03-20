@@ -1,8 +1,3 @@
-Here’s your **README.md** file for the NourishKids repository. It’s well-structured for clarity, professionalism, and easy collaboration.  
-
----
-
-```markdown
 # NourishKids 🍎
 
 **Empowering personalized nutrition for kids through AI-driven recommendations.**  
@@ -30,28 +25,7 @@ NourishKids is a React-based web application that provides personalized meal pla
    ```bash
    git clone https://github.com/yanetniguse/NourishKidsWebapp.git
    cd NourishKidsWebapp
-   ```
-2. Install dependencies:  
-   ```bash
-   npm install
-   ```
-3. Run the development server:  
-   ```bash
-   npm start
-   ```
 
-## 💡 Contribution Guidelines  
-We welcome contributions!  
-- Fork the repository  
-- Create a feature branch (`git checkout -b feature-name`)  
-- Commit changes (`git commit -m "Add feature"`)  
-- Push to your fork (`git push origin feature-name`)  
-- Submit a Pull Request  
-
-## 📌 Roadmap  
-- [ ] Database Integration for user profiles  
-- [ ] Offline Functionality for remote accessibility  
-- [ ] UI/UX Enhancements  
 
 
 📬 Contact & Support
