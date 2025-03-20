@@ -1,9 +1,11 @@
-# NourishKids 🍎
+# NourishKids 🍎  
 
 **Empowering personalized nutrition for kids through AI-driven recommendations.**  
 
+🚀 **Live Demo:** [NourishKids WebApp](https://breakfree-nourishkids.vercel.app/)  
+
 ## 🌍 Overview  
-NourishKids is a React-based web application that provides personalized meal plans based on a child’s height, weight, and age. It calculates BMI, recommends essential nutrients, and suggests appropriate foods. The system integrates an AI-powered chatbot for interactive user engagement.
+NourishKids is a React-based web application that provides personalized meal plans based on a child’s height, weight, and age. It calculates BMI, recommends essential nutrients, and suggests appropriate foods. The system integrates an AI-powered chatbot for interactive user engagement.  
 
 ## 🚀 Features  
 - **Personalized Meal Plans** – Generates meal recommendations based on user input.  
@@ -25,16 +27,34 @@ NourishKids is a React-based web application that provides personalized meal pla
    ```bash
    git clone https://github.com/yanetniguse/NourishKidsWebapp.git
    cd NourishKidsWebapp
+2. Install dependencies:  
+   ```bash
+   npm install
+   ```
+3. Run the development server:  
+   ```bash
+   npm start
+   ```
 
+## 💡 Contribution Guidelines  
+We welcome contributions!  
+- Fork the repository  
+- Create a feature branch (`git checkout -b feature-name`)  
+- Commit changes (`git commit -m "Add feature"`)  
+- Push to your fork (`git push origin feature-name`)  
+- Submit a Pull Request  
 
+## 📌 Roadmap  
+- [ ] Database Integration for user profiles  
+- [ ] Offline Functionality for remote accessibility  
+- [ ] UI/UX Enhancements  
 
-📬 Contact & Support
-For questions, suggestions, or collaboration opportunities, reach out:
+## 📬 Contact & Support  
+For questions, suggestions, or collaboration opportunities, reach out:  
 
 📩 **LinkedIn:** [Yanet Niguse](https://www.linkedin.com/in/yanetniguse7)  
-🌍 **Portfolio:** [yanet-niguse-tesfay.vercel.app](https://yanet-niguse-tesfay.vercel.app/)
+🌍 **Portfolio:** [yanet-niguse-tesfay.vercel.app](https://yanet-niguse-tesfay.vercel.app/)  
+📧 **Email:** [yanetesfay@gmail.com](mailto:yanetesfay@gmail.com)  
 
 ## 📄 License  
 MIT License  
-
----
